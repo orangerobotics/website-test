@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orange Robotics</title>
+    <meta
+      name="description"
+      content="Orange Robotics, an AI-powered robotics education experience with an interactive 3D product hero."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#" aria-label="Orange Robotics home">
+        <span class="brand-mark">Or</span>
+        <span>Orange Robotics</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#system">System</a>
+        <span>Docs</span>
+        <a href="#learn">Learn</a>
+      </nav>
+      <a class="nav-action" href="#reserve">Pre-order</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Your final companion for learning robotics</p>
+          <h1 id="hero-title">Meet <span>Orange Bot.</span></h1>
+          <p class="hero-lede">
+            Experience the next generation of robotics education through
+            AI-powered guidance, hands-on building, and open collaboration.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#reserve">Reserve yours</a>
+          </div>
+        </div>
+
+        <div class="robot-stage" aria-label="Interactive 3D cube placeholder for Orange Bot">
+          <div class="orbit-hint" aria-hidden="true">
+            <span></span>
+          </div>
+          <div class="scene" id="robot-scene">
+            <div class="robot" id="robot-model">
+              <div class="shadow"></div>
+              <div class="cube cuboid">
+                <span class="face front"></span>
+                <span class="face back"></span>
+                <span class="face right"></span>
+                <span class="face left"></span>
+                <span class="face top"></span>
+                <span class="face bottom"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section system" id="system" aria-labelledby="system-title">
+        <div class="section-header">
+          <p class="eyebrow">Why choose Orange Robotics?</p>
+          <h2 id="system-title">The next generation of robotics education.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>AI-Powered Personalization</h3>
+            <p>
+              Machine learning creates personalized pathways that adapt in
+              real time to each learner's skill level and preferences.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Hands-On Innovation Lab</h3>
+            <p>
+              Build cutting-edge robotics projects with industry-standard tools,
+              deploy code instantly, and see results in live simulations.
+            </p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Open Source Ecosystem</h3>
+            <p>
+              Join a community of developers and researchers contributing to
+              shared robotics projects and collaborative learning.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio" id="studio" aria-labelledby="studio-title">
+        <div class="studio-copy">
+          <p class="eyebrow">Stay in the loop</p>
+          <h2 id="studio-title">Be first to know what Orange is building.</h2>
+          <p>
+            Get product updates, early access opportunities, and community news
+            for robotics enthusiasts, learners, and builders.
+          </p>
+        </div>
+        <div class="interface-panel" aria-label="Orange Studio interface preview">
+          <div class="panel-bar">
+            <span></span><span></span><span></span>
+            <strong>Autonomy Lab</strong>
+          </div>
+          <div class="panel-body">
+            <div class="code-pane">
+              <p><b>path</b> = planner.route(goal)</p>
+              <p><b>arm</b>.track(path, speed=0.4)</p>
+              <p><b>vision</b>.lock("marker")</p>
+            </div>
+            <div class="telemetry">
+              <span style="--v: 72%"></span>
+              <span style="--v: 48%"></span>
+              <span style="--v: 86%"></span>
+              <span style="--v: 61%"></span>
+            </div>
+            <div class="map">
+              <i></i><i></i><i></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section learn" id="learn" aria-labelledby="learn-title">
+        <div class="section-header compact">
+          <p class="eyebrow">Learning path</p>
+          <h2 id="learn-title">Hands-on robotics that scales with ambition.</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <span>Getting Started</span>
+            <p>Learn core robotics concepts with guided, approachable projects.</p>
+          </div>
+          <div>
+            <span>Tutorials</span>
+            <p>Move from simple behaviors to code-driven robotic systems.</p>
+          </div>
+          <div>
+            <span>Community</span>
+            <p>Share builds, compare approaches, and learn alongside others.</p>
+          </div>
+          <div>
+            <span>Documentation</span>
+            <p>Use clear references as projects become more ambitious.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reserve" id="reserve" aria-labelledby="reserve-title">
+        <div>
+          <p class="eyebrow">Get updates</p>
+          <h2 id="reserve-title">Join the Orange Robotics community.</h2>
+        </div>
+        <form class="reserve-form">
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <button class="button primary" type="submit">Get updates</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-brand-lockup" href="#" aria-label="Orange Robotics home">
+            <span class="footer-mark">Or</span>
+            <span>Orange Robotics</span>
+          </a>
+          <p>
+            Revolutionizing robotics education through AI-powered learning
+            experiences. Join thousands of learners on their journey to master
+            the future of technology.
+          </p>
+        </div>
+        <nav class="footer-links" aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#system">Getting Started</a></li>
+            <li><a href="#studio">Documentation</a></li>
+            <li><a href="#learn">Tutorials</a></li>
+            <li><a href="#reserve">Community</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-links" aria-label="Support links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#reserve">Help Center</a></li>
+            <li><a href="#reserve">Contact Us</a></li>
+            <li><a href="#reserve">Bug Reports</a></li>
+            <li><a href="#reserve">Feature Requests</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Orange Robotics. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

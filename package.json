@@ -1,0 +1,9 @@
+{
+  "name": "website-test",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo \"Static site ready for Vercel\""
+  }
+}
