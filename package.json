@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev",
+    "preview": "node serve.js",
     "build": "echo \"Static site ready for Vercel\""
   }
 }
